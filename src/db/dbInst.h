@@ -102,7 +102,7 @@ class _dbInst : public _dbObject
   dbVector<uint> _iterms;
   dbId<_dbBox> _halo;
   uint pin_access_idx_;
-
+  uint32_t _sta_vertex_id;
   _dbInst(_dbDatabase*);
   _dbInst(_dbDatabase*, const _dbInst& i);
   ~_dbInst();
