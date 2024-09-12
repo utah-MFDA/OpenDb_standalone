@@ -31,6 +31,7 @@
 // POSSIBILITY OF SUCH DAMAGE.
 
 #pragma once
+#include <cstdint>
 
 #include "geom.h"
 #include "odb.h"

@@ -31,7 +31,7 @@
 // POSSIBILITY OF SUCH DAMAGE.
 
 #pragma once
-
+#include <cstdint>
 
 namespace odb {
 

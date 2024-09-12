@@ -36,6 +36,7 @@
 //#define _CRTDBG_MAP_ALLOC
 
 #pragma once
+#include <cstdint>
 
 #include <string.h>
 

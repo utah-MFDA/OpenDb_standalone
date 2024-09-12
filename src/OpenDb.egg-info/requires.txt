@@ -1,0 +1,10 @@
+numpy
+cmake-build-extension
+
+[all]
+pytest
+pytest-icdiff
+
+[test]
+pytest
+pytest-icdiff

@@ -34,6 +34,7 @@
 ////	AUTHOR: SANJEEV MAHAJAN
 ---------------------------------------------------------------*/
 #pragma once
+#include <cstdint>
 
 #include <stdlib.h>
 
