@@ -1,20 +1,20 @@
 include("swig_lib")
 
-swig_lib(NAME          odb_py
+swig_lib(NAME          opendbpy
          NAMESPACE     odb
          LANGUAGE      python
          I_FILE        ../common/odb.i
          SWIG_INCLUDES ${PROJECT_SOURCE_DIR}/include
                        ${PROJECT_SOURCE_DIR}/src/swig/python
-         SCRIPTS       ${CMAKE_CURRENT_BINARY_DIR}/odb_py.py
+         SCRIPTS       ${CMAKE_CURRENT_BINARY_DIR}/opendbpy.py
 )
 
-target_include_directories(odb_py
+target_include_directories(opendbpy
     PUBLIC
         ${PROJECT_SOURCE_DIR}/include/odb
 )
 
-target_link_libraries(odb_py
+target_link_libraries(opendbpy
     PUBLIC
         odb
         ${TCL_LIBRARY}
@@ -24,13 +24,12 @@ target_link_libraries(odb_py
 
 
 install(
-    TARGETS odb_py 
+    TARGETS opendbpy
     DESTINATION "."
 )
 
 
 #install(
-#    FILES ${CMAKE_CURRENT_BINARY_DIR}/odb_py.py
+#    FILES ${CMAKE_CURRENT_BINARY_DIR}/opendbpy.py
 #    DESTINATION ${CMAKE_INSTALL_LIBDIR}
 #)
-
