@@ -25,11 +25,5 @@ target_link_libraries(opendbpy
 
 install(
     TARGETS opendbpy
-    DESTINATION "."
+    DESTINATION ${Python3_SITELIB}
 )
-
-
-#install(
-#    FILES ${CMAKE_CURRENT_BINARY_DIR}/opendbpy.py
-#    DESTINATION ${CMAKE_INSTALL_LIBDIR}
-#)
