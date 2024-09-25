@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD 17)
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}")
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "/usr/share/cmake/Modules")
 
-find_package(Python3 COMPONENTS Development REQUIRED)
+find_package(Python3 COMPONENTS Development Interpreter REQUIRED)
 
 find_package(SWIG 3.0 REQUIRED)
 if (SWIG_VERSION VERSION_GREATER_EQUAL "4.1.0")
