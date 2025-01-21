@@ -89,6 +89,8 @@ using namespace odb;
 %include "dbhelpers.i"  
 %include "dbdiff.i"
 
+%rename(getPoint_ext) odb::dbWireDecoder::getPoint(int& x, int& y, int& ext) const;
+
 %include "odb/dbViaParams.h"
 %include "odb/dbRtEdge.h"
 %include "odb/dbWireCodec.h"
